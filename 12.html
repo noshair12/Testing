@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visa Application</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const words = ['jorji', 'ezic', 'food', 'mercy'];
+      words.forEach(word => {
+        word.split('').forEach(char => {
+          window.postMessage({ action: 'keystroke', payload: char }, '*');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  Glory to Arstotzka!
+</body>
+</html>
